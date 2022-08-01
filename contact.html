@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+  <!-- Assignment: Final Project - Online Profile
+       Contact Page of Final Project
+       Author: Audrey Harmon
+       Date: July 29, 2022
+
+       filename: contact.html -->
+
+       <meta charset="utf-8">
+       <meta name="keywords" content="Developer, Portfolio, Student, Profile"/>
+       <link href="style.css" rel="stylesheet"/>
+       <link rel="stylesheet" href="responsiveStyle.css">
+
+       <title>Audrey Harmon</title>
+
+     </head>
+
+     <body>
+       <header>
+         <div class="profile">
+           <a href="index.html">
+             <img src="profile.jpg" alt="logo" width="85"/>
+           </a>
+         </div>
+
+         <nav class="menu">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="https://www.linkedin.com/in/audrey-harmon/" target="blank">LinkedIn</a></li>
+             <li><a href="https://github.com/ah0556702" target="blank">GitHub</a></li>
+           </ul>
+         </nav>
+       </header>
+
+       <form method="get" action="submit.html">
+         <label for="fname"><strong>First Name:</strong></label><br>
+         <input type="text" id="fname" name="fname"><br>
+         <label for="lname"><strong>Last Name:</strong></label><br>
+         <input type="text" id="lname" name="lname"><br>
+         <label><strong>Email:</strong></label><br>
+         <input type="email" name="email"><br>
+         <label><strong>Message:</strong></label><br>
+         <textarea name="message" rows="8" cols="20"></textarea><br>
+         <input type="submit" onClick="printQuery()" value="Submit">
+       </form>
+
+
+       <footer>
+         <p><strong><em>Audrey Harmon &copy; 2022</em></strong></p>
+       </footer>
+     </body>
+   </html>

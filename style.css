@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+/* Assignment: Final Project - Online Profile
+   Style Page of Final Project
+   Author: Audrey Harmon
+   Date: July 31, 2022
+
+   filename: style.css */
+
+:root {
+  --white: #F4F3F7;
+  --black: #1A090D;
+  --contrast: #9A6AA0;
+  --gray: #6B6570;
+  --light: #D3CDD7;
+}
+
+body {
+  background-color: var(--light);
+  font-family: 'Roboto';
+}
+
+header {
+  display: flex;
+  background-color: var(--black);
+}
+
+.menu {
+  position: relative;
+  margin-left: auto;
+  box-shadow: 0px 5px 15px var(--contrast);
+}
+
+.menu li {
+  display: inline-flex;
+  font-size: 1.9em;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+.menu a:link {
+  color: var(--contrast);
+  text-decoration: none;
+}
+
+.menu a:visited {
+  color: var(--contrast);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.menu a:active {
+  color: var(--gray);
+  text-decoration: underline;
+}
+
+.profile img {
+  border: 4px solid var(--light);
+  border-radius: 100%;
+  margin-left: 195px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio img {
+  height: 450px;
+  text-align: center;
+  box-shadow: 5px 5px 10px var(--black);
+}
+
+.fit {
+  text-align: center;
+}
+
+
+.portfolio h2, p {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.portfolio h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  text-shadow: 2px 2px 3px var(--gray);
+}
+
+.resume {
+  text-align: center;
+  margin: auto;
+  color: var(--contrast);
+  background-color: var(--black);
+  box-shadow: 0px 5px 15px var(--contrast);
+}
+
+.resume div {
+  margin-bottom: 130px;
+  padding-left: 35px;
+}
+
+.resume h1 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  text-shadow: 1px 1px 2px var(--light);
+}
+
+.resume h3 {
+  text-decoration: underline;
+}
+
+.resume p, ul, h3 {
+  text-align: left;
+}
+
+.resume a:link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.skills h3 {
+  margin-bottom: 50px;
+}
+
+.skills img {
+  margin-right: 25px;
+}
+
+hr {
+  margin-bottom: 75px;
+  background-color: var(--black);
+}
+
+.additional ul {
+  margin-top: 25px;
+}
+
+.additional li {
+  list-style-type: circle;
+  margin-bottom: 20px;
+}
+
+footer {
+  color: var(--contrast);
+  font-size: 1em;
+  text-align: right;
+  margin-left: 75%;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--black);
+  color: var(--contrast);
+  font-size: 1.2em;
+}
+
+form input {
+  height: 30px;
+}
+
+form input[type=submit] {
+  width: 50%;
+  background-color: var(--contrast);
+  font-size: 1em;
+}
+
+form input, textarea{
+  width: 75%;
+  border-radius: 10px;
+}

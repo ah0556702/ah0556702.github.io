@@ -1,0 +1,99 @@
+/* Assignment: Final Project - Online Profile
+   Responsive Style Page of Final Project
+   Author: Audrey Harmon
+   Date: July 31, 2022
+
+   filename: responsiveStyle.css */
+
+@media screen and (max-width: 700px) {
+
+  .menu {
+    display: flex;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .menu li {
+    font-size: 1.5em;
+    display: inline-block;
+  }
+
+  .profile img {
+    display: none;
+  }
+
+  .content {
+    display: inline-flex;
+  }
+
+  .portfolio {
+    text-align: center;
+    width: 75%;
+  }
+
+  .portfolio img {
+    height: 100px;
+  }
+
+  .resume {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .resume div {
+    margin-bottom: 25px;
+  }
+
+  .resume p {
+    font-size: 1em;
+    padding-right: 140px;
+  }
+
+  .resume h1 {
+    font-size: 1.3em;
+    text-shadow: none;
+    margin-bottom: 30px;
+  }
+
+  .resume h3 {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .school {
+    display: none;
+  }
+
+  .additional {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+
+  .skills img {
+    height: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  hr {
+    display: none;
+  }
+
+  footer {
+    margin: auto;
+    text-align: justify;
+  }
+
+
+}

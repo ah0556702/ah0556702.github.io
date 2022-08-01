@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+      <!--
+         Assignment: Final Project - Online Profile
+         Submit Page of Final Project
+         Author: Audrey Harmon
+         Date: July 31, 2022
+
+       Filename: submit.html
+      -->
+
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet"/>
+    <script>
+      function printQuery() {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+            document.write(pair[0] + ": " + pair[1] + "<br />");
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="static/styles.css" />
+    <title>Audrey Harmon</title>
+  </head>
+
+  <body>
+
+      <header>
+        <div class="profile">
+          <a href="index.html">
+            <img src="profile.jpg" alt="logo" width="85"/>
+          </a>
+        </div>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/audrey-harmon/" target="blank">LinkedIn</a></li>
+            <li><a href="https://github.com/ah0556702" target="blank">GitHub</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script>
+        printQuery();
+      </script>
+
+    <h1>Thank You!</h1>
+
+    <footer>
+      <p><strong><em>Audrey Harmon &copy; 2022</em></strong></p>
+    </footer>
+  </body>
+
+</html>
